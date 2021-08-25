@@ -4,10 +4,10 @@ hub:
       admin_access: true
       admin_users:
         - jovyan
-  extraConfig:
-    myConfig.py: |
-      c.JupyterHub.allow_named_servers = True
-      c.JupyterHub.named_server_limit_per_user = 2
+  # extraConfig:
+  #   myConfig.py: |
+  #     c.JupyterHub.allow_named_servers = True
+  #     c.JupyterHub.named_server_limit_per_user = 2
 singleuser:
   image:
     name: jupyter/minimal-notebook
